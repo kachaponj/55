@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar >
+    <button ion-button menuToggle>
+      <ion-icon name="menu" class="icon ion-home custom-icon"></ion-icon>
+    </button>
+    <ion-title>
+      Bicep List 
+    </ion-title>
+
+      
+      
+      
+      
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ 
+<div class="spacer" style="height: 60px;"></div>
+
+ <ion-row>
+   <ion-col>
+          <button ion-button [navPush]="DashB" color="light" style="height: 140px;">
+            <div align="center" style="height: 140px;"><br><img src="assets/images/reverse.jpg"><br>Reverse<br></div>
+          </button>
+   </ion-col>
+   
+   <ion-col>
+          <button ion-button color="light" style="height: 140px;" >
+            <div align="center" style="height: 140px;"><br> <img src="assets/images/preacher.jpg"> <br>Preacher<br></div>
+          </button>
+   </ion-col>
+ </ion-row>
+
+ <ion-row>
+   <ion-col>
+          <button ion-button [navPush]="hammerI" color="light" style="height: 140px;">
+            <div align="center" style="height: 140px;"><br><img src="assets/images/hammer.jpg"><br>Hammer<br></div>
+          </button></ion-col>
+   <ion-col>
+          <button ion-button [navPush]="StockO" color="light" style="height: 140px;">
+            <div align="center" style="height: 140px;"><br><img src="assets/images/curls.gif"><br>Curl</div>
+          </button></ion-col>
+ </ion-row>
+
+	
+</ion-content>

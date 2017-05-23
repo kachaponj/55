@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar hideBackButton>
+     <ion-buttons end>
+    <button ion-button (click)="dismiss()" class="icon ion-home custom-icon">
+      Close
+    </button>
+     </ion-buttons>
+   
+    <ion-title>
+        Add Exercise
+    </ion-title>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+      
+        <ion-item>
+            <ion-label>Name of Abs:</ion-label>
+            <ion-input text-right type="text" [(ngModel)]="contact.Name"></ion-input>
+      </ion-item>
+
+      
+        <ion-item>
+            <ion-label>Part</ion-label>
+                <ion-select [(ngModel)]="contact.Part" interface="popover">
+                <ion-option *ngFor="let c of category" [value]="c.cat" checked="false">{{c.cat}}</ion-option>
+                
+                </ion-select>
+        </ion-item>
+      
+        <ion-item>
+            <ion-label>Set:</ion-label>
+            <ion-input text-right type="text" [(ngModel)]="contact.Set"></ion-input>
+        </ion-item>
+      
+      
+ 
+      
+    </ion-list>
+    <button ion-button block (click)="addcon()">Confirm</button>
+
+</ion-content>

@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar >
+    <button ion-button menuToggle>
+      <ion-icon name="menu" class="icon ion-home custom-icon"></ion-icon>
+    </button>
+    <ion-title>
+      Workout List 
+    </ion-title>
+
+      
+      
+      
+      
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ 
+<div class="spacer" style="height: 60px;"></div>
+
+ <ion-row>
+   <ion-col>
+          <button ion-button [navPush]="DashB" color="light" style="height: 140px;">
+            <div align="center" style="height: 140px;"><br><img src="assets/images/dash.png"><br>Abs<br></div>
+          </button>
+   </ion-col>
+   
+   <ion-col>
+          <button ion-button [navPush] = "BackB" color="light" style="height: 140px;">
+            <div align="center" style="height: 140px;"><br><img src="assets/images/back.jpg"> <br>Back<br></div>
+          </button>
+   </ion-col>
+ </ion-row>
+
+ <ion-row>
+   <ion-col>
+          <button ion-button [navPush]="bicepI" color="light" style="height: 140px;">
+            <div align="center" style="height: 140px;"><br><img src="assets/images/bicep.jpg"><br>Bicep<br></div>
+          </button></ion-col>
+   <ion-col>
+          <button ion-button [navPush]="chestI" color="light" style="height: 140px;">
+            <div align="center" style="height: 140px;"><BR><img src="assets/images/chest.jpg"><br>Chest</div>
+          </button></ion-col>
+ </ion-row>
+
+	
+</ion-content>

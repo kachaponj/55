@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar >
+    <button ion-button menuToggle>
+      <ion-icon name="menu" class="icon ion-home custom-icon"></ion-icon>
+    </button>
+    <ion-title>
+      ABS List 
+    </ion-title>
+
+      
+      
+      
+      
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ 
+<div class="spacer" style="height: 60px;"></div>
+
+ <ion-row>
+   <ion-col>
+          <button ion-button [navPush]="benchI" color="light" style="height: 140px;">
+            <div align="center" style="height: 140px;"><BR><img src="assets/images/benchsitup.gif"><br>Bench Situp<br></div>
+          </button>
+   </ion-col>
+   
+   <ion-col>
+          <button ion-button color="light" style="height: 140px;">
+            <div align="center" style="height: 140px;"><br> <img src="assets/images/Crunch.gif"> <br>Crunch<br></div>
+          </button>
+   </ion-col>
+ </ion-row>
+
+ <ion-row>
+   <ion-col>
+          <button ion-button [navPush]="StockI" color="light" style="height: 140px;">
+            <div align="center" style="height: 140px;"><br><img src="assets/images/dumbbell.jpg"><br>Dumbbell<br></div>
+          </button></ion-col>
+   <ion-col>
+          <button ion-button [navPush]="StockO" color="light" style="height: 140px;">
+            <div align="center" style="height: 140px;"><br><img src="assets/images/legraise.gif"><br>Leg Raise</div>
+          </button></ion-col>
+ </ion-row>
+
+	
+</ion-content>

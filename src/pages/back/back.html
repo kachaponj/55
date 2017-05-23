@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar >
+    <button ion-button menuToggle>
+      <ion-icon name="menu" class="icon ion-home custom-icon"></ion-icon>
+    </button>
+    <ion-title>
+      Back List 
+    </ion-title>
+
+      
+      
+      
+      
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ 
+<div class="spacer" style="height: 60px;"></div>
+
+ <ion-row>
+   <ion-col>
+          <button ion-button [navPush]="DashB" color="light" style="height: 140px;"><br><br>
+            <div align="center" style="height: 140px;"><br><img src="assets/images/deadlift.jpg"><br>Deadlift<br></div>
+          </button>
+   </ion-col>
+   
+   <ion-col>
+          <button ion-button color="light" [navPush]="chinupI" style="height: 140px;" >
+            <div align="center" style="height: 140px;"> <br><img src="assets/images/chinup.gif"> <br>Chinup<br></div>
+          </button>
+   </ion-col>
+ </ion-row>
+
+ <ion-row>
+   <ion-col>
+          <button ion-button [navPush]="StockI" color="light" style="height: 140px;">
+            <div align="center" style="height: 140px;"><br><img src="assets/images/pulldown.jpg"><br>Pulldown<br></div>
+          </button></ion-col>
+   <ion-col>
+          <button ion-button [navPush]="StockO" color="light" style="height: 140px;">
+            <div align="center" style="height: 140px;"><br><img src="assets/images/chinup.jpg"><br>Pullup</div>
+          </button></ion-col>
+ </ion-row>
+
+	
+</ion-content>

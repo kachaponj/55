@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar >
+    <button ion-button menuToggle>
+      <ion-icon name="menu" class="icon ion-home custom-icon"></ion-icon>
+    </button>
+    <ion-title>
+        Exercise Memo
+    </ion-title>
+
+    <ion-buttons end>
+      <button ion-button (click) = "Addpage()">
+          <ion-icon name="add" class="icon ion-home custom-icon"></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-list inset>
+        <ion-item *ngFor="let con of contact" (click)="showDetail(con)">
+          <div item-left> </div>
+            
+            Name of Abs:<div>{{ con.Name }}</div>
+            Part:<div>{{ con.Part }}</div>
+            Set:    <div>{{ con.Set }}</div>
+          
+          
+        </ion-item>
+    </ion-list>
+    
+</ion-content>

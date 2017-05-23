@@ -1,0 +1,40 @@
+<ion-header>  
+  <ion-navbar>
+      <button ion-button clear small navPop>
+      <ion-icon name="arrow-back" class="icon ion-home custom-icon"></ion-icon>
+    </button>
+    <ion-title>Edit Exercise</ion-title>
+    <ion-buttons end *ngIf="!isNew">
+      <button ion-button (click)="delete()">
+          <ion-icon name="trash"  class="icon ion-home custom-icon"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>  
+      <ion-list>
+          
+     <ion-item>
+            <ion-label>Name of Abs:</ion-label>
+            <ion-input text-right type="text" [(ngModel)]="contact.Name"></ion-input>
+      </ion-item>
+
+      
+        <ion-item>
+            <ion-label>Part</ion-label>
+                <ion-select [(ngModel)]="contact.Part" interface="popover">
+                <ion-option *ngFor="let c of category" [value]="c.cat" checked="false">{{c.cat}}</ion-option>
+                
+                </ion-select>
+        </ion-item>
+      
+        <ion-item>
+            <ion-label>Set:</ion-label>
+            <ion-input text-right type="text" [(ngModel)]="contact.Set"></ion-input>
+        </ion-item>
+      
+      
+          </ion-list>
+    <button ion-button block (click)="save()">Save</button>
+</ion-content> 
